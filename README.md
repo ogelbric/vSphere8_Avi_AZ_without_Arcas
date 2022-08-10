@@ -88,10 +88,12 @@ Result:
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/depavi5.png)
 
-![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/depavi6.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/adepavi6.png)
 
 
 ### Set up AVI
+
+#### Set Up AVI License (new)
 
 ## Set up WCP enable ment 
 
