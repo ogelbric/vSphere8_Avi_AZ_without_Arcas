@@ -49,6 +49,10 @@ Result:
 
 ### Make sure Storage police has consumption / zonal enabled
 
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/con1.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/con2.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/con3.png)
+
 ### Make sure zones for the 3 vCenter clusters is enabled
 
 ## Deploy and set up AVI
