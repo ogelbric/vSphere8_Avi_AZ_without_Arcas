@@ -76,7 +76,7 @@ Result:
 
 ## Deploy and set up AVI
 
-### Deploy AVI OVA
+### Deploy AVI OVA (Management Network 192.168.1.40)
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/depavi1.png)
 
@@ -93,7 +93,19 @@ Result:
 
 ### Set up AVI
 
+#### Set Up AVI admin account / DNS
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic1.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic2.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic3.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic4.png)
+
 #### Set Up AVI License (new)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic5.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic6.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic7.png)
+
 
 ## Set up WCP enable ment 
 
