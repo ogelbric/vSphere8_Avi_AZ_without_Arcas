@@ -223,6 +223,14 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ## Set up WCP enablement 
 
+Before we start current picture of vCenter and its Zones 1-3
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpenab1.png)
+
+
+
+
+
 ## Trouble shooting
 
 ..
