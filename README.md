@@ -104,6 +104,16 @@ Result:
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contentlib6.png)
 
+### Makre sure the is a content Lib for the k8 images (subscribed)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/k8lib1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/k8lib2.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/k8lib3.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/k8lib4.png)
+
 ## Deploy and set up AVI
 
 ### Deploy AVI OVA (Management Network 192.168.1.40)
