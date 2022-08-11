@@ -206,9 +206,9 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 #### Set Up AVI - Service Engine (SE) group needs the zone clusters to deploy to
 
-![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avigroup1.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avisegroup1.png)
 
-![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avigroup2.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avisegroup2.png)
 
 
 ## Set up WCP enable ment 
