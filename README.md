@@ -263,6 +263,16 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ```
 The 3 Supervisor VM's have 4-4-5 IP's - that is correct
+
+Logging onto vCenter to jump to Supervisor to check on AKO
+
+k get pods -A  # looks like AKO is in some crash loop
+k logs -n vmware-system-ako vmware-system-ako-ako-controller-manager-58fbd65b89-2hzpk # and the log tells me my IPam has issues on my cloud...
+
+2022-08-11T17:41:36.360Z        INFO    cache/controller_obj_cache.go:2633      Skipping the check for SE group labels 
+2022-08-11T17:41:36.360Z        ERROR   k8s/ako_init.go:274     Error while validating input: Cloud does not have a ipam_provider_ref configured
+2022-08-11T17:41:36.360Z        ERROR   ako-main/main.go:228    Handle configmap error during reboot, shutting down AKO. Error is: sync is disabled because of configmap unavailability during bootup
+
 ```
 
 ...
