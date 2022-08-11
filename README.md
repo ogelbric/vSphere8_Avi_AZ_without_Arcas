@@ -284,7 +284,23 @@ k delete -n vmware-system-ako pod vmware-system-ako-ako-controller-manager-58fbd
 k get pods -A |grep -i ako # get the new pod name and it is running now=
 k logs -n vmware-system-ako  vmware-system-ako-ako-controller-manager-58fbd65b89-nc8px -f. #follow the log looks like it is working now
 
-
 ```
+
+### AVI SE's are deploying
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp15.png)
+
+
+
+### Things are starting to look green
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp16.png)
+
+
+Log onto supervisor API end point 
+```
+/usr/local/bin/kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.4.70 --insecure-skip-tls-verify
+```
+
 
 ...
