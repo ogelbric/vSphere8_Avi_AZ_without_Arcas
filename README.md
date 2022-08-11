@@ -126,14 +126,19 @@ Result:
 #### Set Up AVI admin account / DNS
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic1.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic2.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic3.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic4.png)
 
 #### Set Up AVI License (new)
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic5.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic6.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avilic7.png)
 
 #### Set Up AVI - Convert default Cloud to vCenter (new)
@@ -164,7 +169,7 @@ Result:
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet6.png)
 
-#### Set Up AVI - Route
+#### Set Up AVI - Route (new location)
 
 Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
@@ -199,6 +204,11 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicertloc2.png)
 
+#### Set Up AVI - Service Engine (SE) group needs the zone clusters to deploy to
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avigroup1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avigroup2.png)
 
 
 ## Set up WCP enable ment 
