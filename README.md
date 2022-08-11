@@ -265,6 +265,10 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 The 3 Supervisor VM's have 4-4-5 IP's - that is correct
 
 Logging onto vCenter to jump to Supervisor to check on AKO
+ssh root@192.168.1.50 # my vcenter
+shell
+/usr/lib/vmware-wcp/decryptK8Pwd.py
+ssh root@192.168.1.80 # and use password from above command
 
 k get pods -A  # looks like AKO is in some crash loop
 k logs -n vmware-system-ako vmware-system-ako-ako-controller-manager-58fbd65b89-2hzpk # and the log tells me my IPAM has issues on my cloud...
