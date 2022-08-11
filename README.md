@@ -364,4 +364,9 @@ v1.22.9---vmware.1-tkg.1.cc71bc8    v1.22.9+vmware.1-tkg.1.cc71bc8    True    Tr
 ### Cluster is creating 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpwlcluster1.png)
 
+```
+Log onto workload cluster
+kubectl vsphere login --server 192.168.4.70 --vsphere-username administrator@vsphere.local --managed-cluster-namespace namespace1000 --managed-cluster-name tkr-zoned_cluster01 --insecure-skip-tls-verify
+```
+
 ...
