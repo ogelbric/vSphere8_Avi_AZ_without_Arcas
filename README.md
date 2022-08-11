@@ -297,11 +297,29 @@ k logs -n vmware-system-ako  vmware-system-ako-ako-controller-manager-58fbd65b89
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp16.png)
 
+## WCP - Create Namespace and Permissions
 
-Log onto supervisor API end point 
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpns1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpns2.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpnsperm1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpnsperm2.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpnsperm3.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpnsperm4.png)
+
+
+### Log onto supervisor API end point 
 ```
 /usr/local/bin/kubectl-vsphere login --vsphere-username administrator@vsphere.local --server=https://192.168.4.70 --insecure-skip-tls-verify
+kubectl config use-context namespace1000
 ```
+
+### Create Workload cluster accross 3 zones
+
 
 
 ...
