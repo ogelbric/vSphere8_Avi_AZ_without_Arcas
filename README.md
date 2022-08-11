@@ -233,4 +233,4 @@ Before we start current picture of vCenter and its Zones 1-3
 
 ## Trouble shooting
 
-..
+...
