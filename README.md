@@ -290,6 +290,7 @@ k logs -n vmware-system-ako  vmware-system-ako-ako-controller-manager-58fbd65b89
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp15.png)
 
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avisecreating1.png)
 
 
 ### Things are starting to look green
