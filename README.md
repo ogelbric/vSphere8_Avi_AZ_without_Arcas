@@ -150,6 +150,28 @@ Result:
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avidefcl6.png)
 
+#### Set Up AVI - Networks
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet2.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet3.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet4.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet5.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avinet6.png)
+
+#### Set Up AVI - Route
+
+Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avirout1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avirout2.png)
+
 ## Set up WCP enable ment 
 
 ## Trouble shooting
