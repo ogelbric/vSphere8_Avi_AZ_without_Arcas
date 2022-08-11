@@ -180,12 +180,25 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 #### Set Up AVI - Cert 
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert1.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert2.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert3.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert4.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert5.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert6.png)
+
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicert7.png)
+
+#### Set Up AVI - Cert Location
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicertloc1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avicertloc2.png)
+
 
 
 ## Set up WCP enable ment 
