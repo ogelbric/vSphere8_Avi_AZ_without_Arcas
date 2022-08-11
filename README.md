@@ -255,6 +255,9 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp13.png)
 
+### Observe the deployment of the supervisor VM's into 3 different vCenter clusters
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcp14.png)
 
 ## Trouble shooting
 
