@@ -172,6 +172,14 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/avirout2.png)
 
+#### Set Up AVI - Default Cloud is green (FYI the AKO POD in TKGs/u is lookign for the DefaultCloud in AVI!)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/aviclgreen1.png)
+
+
+#### Set Up AVI - Cert 
+
+
 ## Set up WCP enable ment 
 
 ## Trouble shooting
