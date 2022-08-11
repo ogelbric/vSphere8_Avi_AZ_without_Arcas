@@ -23,6 +23,23 @@ Workload cluster
   Done by hand 
 ```
 
+## Network layout
+```
+DNS = "10.197.96.7"
+NTP = "10.128.152.81"
+
+AVI Management Network "192.168.1.1/24" "192.168.1.60-192.168.70"
+AVI Frontend Network "192.168.4.1/24" "192.168.4.70-192.168.4.100"
+AVI Route workload to frontend network 192.168.5.0/24 -> 192.168.4.1
+
+WCP Management Network 192.168.1.80 <--- Start
+WCP Workload Network "192.168.5.1/24" "192.168.5.120-192.168.5.140"
+
+vCenter = 192.168.1.50
+AVI = 192.168.1.40
+ESXi = See William Lams script
+```
+
 ## The Nested deploy via William Lams Power Shell Script
 
 Here is the script modified for 3 vCenter clusters and 9 ESXi hosts
