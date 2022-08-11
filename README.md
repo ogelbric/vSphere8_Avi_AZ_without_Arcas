@@ -261,4 +261,8 @@ Route from 192.168.5.0/24 (workload network to frontent) -> 192.168.4.1
 
 ## Trouble shooting
 
+```
+The 3 Supervisor VM's have 4-4-5 IP's - that is correct
+```
+
 ...
