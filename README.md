@@ -361,4 +361,7 @@ v1.21.6---vmware.1-tkg.1.b3d708a    v1.21.6+vmware.1-tkg.1.b3d708a    True    Tr
 v1.22.9---vmware.1-tkg.1.cc71bc8    v1.22.9+vmware.1-tkg.1.cc71bc8    True    True         94m
 ```
 
+### Cluster is creating 
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/wcpwlcluster1.png)
+
 ...
