@@ -366,7 +366,18 @@ v1.22.9---vmware.1-tkg.1.cc71bc8    v1.22.9+vmware.1-tkg.1.cc71bc8    True    Tr
 
 ```
 Log onto workload cluster
-kubectl vsphere login --server 192.168.4.70 --vsphere-username administrator@vsphere.local --managed-cluster-namespace namespace1000 --managed-cluster-name tkr-zoned_cluster01 --insecure-skip-tls-verify
+kubectl vsphere login --server 192.168.4.70 --vsphere-username administrator@vsphere.local --managed-cluster-namespace namespace1000 --managed-cluster-name tkr-zoned-cluster01 --insecure-skip-tls-verify
+kubectl config use-context tkr-zoned-cluster01
+
+k get nodes
+NAME                                                      STATUS   ROLES                  AGE    VERSION
+tkr-zoned-cluster01-workerpool-1-ddn8z-d58f8694f-5bjct    Ready    <none>                 173m   v1.22.9+vmware.1
+tkr-zoned-cluster01-workerpool-2-4r728-68dd78b9-bszlt     Ready    <none>                 167m   v1.22.9+vmware.1
+tkr-zoned-cluster01-workerpool-3-89dcs-7576c89bb5-5xfhd   Ready    <none>                 167m   v1.22.9+vmware.1
+tkr-zoned-cluster01-xfvvq-gwgnj                           Ready    control-plane,master   163m   v1.22.9+vmware.1
+tkr-zoned-cluster01-xfvvq-w78mh                           Ready    control-plane,master   148m   v1.22.9+vmware.1
+tkr-zoned-cluster01-xfvvq-wscsf                           Ready    control-plane,master   3h4m   v1.22.9+vmware.1
+
 ```
 
 ...
