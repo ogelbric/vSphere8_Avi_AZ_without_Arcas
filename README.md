@@ -379,5 +379,11 @@ tkr-zoned-cluster01-xfvvq-w78mh                           Ready    control-plane
 tkr-zoned-cluster01-xfvvq-wscsf                           Ready    control-plane,master   3h4m   v1.22.9+vmware.1
 
 ```
+### Deploy sample cluster Auth
+
+https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/authorize-psp-for-gc-service-accounts.yaml
+
+### Deploy sample 3 POD nginx 
+
 
 ...
