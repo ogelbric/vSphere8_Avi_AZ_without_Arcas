@@ -383,7 +383,23 @@ tkr-zoned-cluster01-xfvvq-wscsf                           Ready    control-plane
 
 https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/authorize-psp-for-gc-service-accounts.yaml
 
-### Deploy sample 3 POD nginx 
+### Deploy sample 3 POD nginx on 3 worker nodes which are on 3 different vSphere clusters
+
+https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/google-nginx-lbsvcGA.yaml
+
+```
+k get pods
+NAME                     READY   STATUS    RESTARTS   AGE
+nginx-55f8c45555-bf4gs   1/1     Running   0          19m
+nginx-55f8c45555-pdxk4   1/1     Running   0          19m
+nginx-55f8c45555-xpcjf   1/1     Running   0          19m
+[root@centosrouter 8u0]# k get pods -o wide
+NAME                     READY   STATUS    RESTARTS   AGE   IP              NODE                                                      NOMINATED NODE   READINESS GATES
+nginx-55f8c45555-bf4gs   1/1     Running   0          19m   192.168.130.2   tkr-zoned-cluster01-workerpool-2-4r728-68dd78b9-bszlt     <none>           <none>
+nginx-55f8c45555-pdxk4   1/1     Running   0          19m   192.168.131.2   tkr-zoned-cluster01-workerpool-3-89dcs-7576c89bb5-5xfhd   <none>           <none>
+nginx-55f8c45555-xpcjf   1/1     Running   0          19m   192.168.129.2   tkr-zoned-cluster01-workerpool-1-ddn8z-d58f8694f-5bjct    <none>           <none>
+```
+
 
 
 ...
