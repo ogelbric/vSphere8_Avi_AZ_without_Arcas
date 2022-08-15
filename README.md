@@ -40,9 +40,9 @@ AVI = 192.168.1.40
 ESXi = See William Lams script
 ```
 
-## The Nested deploy via William Lams Power Shell Script
+## Nested deploy of lab via William Lams Power Shell Script
 
-Here is the script modified for 3 vCenter clusters and 9 ESXi hosts
+The script modified for 3 vCenter clusters and 9 ESXi hosts
 
   https://github.com/ogelbric/vSphere8_Avi_AZ/blob/main/PSAutomationScript
 
