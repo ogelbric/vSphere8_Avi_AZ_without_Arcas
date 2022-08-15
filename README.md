@@ -400,6 +400,27 @@ nginx-55f8c45555-pdxk4   1/1     Running   0          19m   192.168.131.2   tkr-
 nginx-55f8c45555-xpcjf   1/1     Running   0          19m   192.168.129.2   tkr-zoned-cluster01-workerpool-1-ddn8z-d58f8694f-5bjct    <none>           <none>
 ```
 
+### Check on ingress
 
+```
+k get svc
+NAME         TYPE           CLUSTER-IP        EXTERNAL-IP    PORT(S)        AGE
+kubernetes   ClusterIP      192.168.192.1     <none>         443/TCP        3d20h
+nginx        LoadBalancer   192.168.224.238   192.168.4.75   80:31205/TCP   28m
+supervisor   ClusterIP      None              <none>         6443/TCP       3d20h
+
+curl -v 192.168.4.75
+* Rebuilt URL to: 192.168.4.75/
+*   Trying 192.168.4.75...
+* TCP_NODELAY set
+* Connected to 192.168.4.75 (192.168.4.75) port 80 (#0)
+> GET / HTTP/1.1
+> Host: 192.168.4.75
+> User-Agent: curl/7.61.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Server: nginx/1.19.4Check on ingress
+```
 
 ...
