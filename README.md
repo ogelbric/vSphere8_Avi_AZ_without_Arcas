@@ -423,4 +423,10 @@ curl -v 192.168.4.75
 < Server: nginx/1.19.4Check on ingress
 ```
 
+Trouble shooting
+
+```
+kubectl get tkc,virtualmachine,cluster,virtualmachineservice,vspherecluster,vspheremachine,machine,kcp,kubeadmconfig
+k get tkr
+```
 ....
