@@ -1,0 +1,51 @@
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: Cluster
+metadata:
+  name: classy2-zoned-photon
+  namespace: namespace1000
+spec:
+  clusterNetwork:
+    services:
+      cidrBlocks: ["198.51.100.0/12"]
+    pods:
+      cidrBlocks: ["192.0.2.0/16"]
+    serviceDomain: "cluster.local"
+  topology:
+    class: tanzukubernetescluster
+    version: v1.23.8---vmware.2-tkg.1-zshippable
+    controlPlane:
+      replicas: 3
+    workers:
+      machineDeployments:
+        - class: node-pool
+          failureDomain: zone1
+          name: node-pool-1
+          replicas: 1
+        - class: node-pool
+          failureDomain: zone2
+          name: node-pool-2
+          replicas: 1
+        - class: node-pool
+          failureDomain: zone3
+          name: node-pool-3
+          replicas: 1
+    variables:
+      - name: vmClass
+        value: best-effort-small
+      - name: storageClass
+        value: pacific-gold-storage-policy
+      - name: defaultStorageClass
+        value: pacific-gold-storage-policy
+      - name: clusterEncryptionConfigYaml
+        value: |
+          apiVersion: apiserver.config.k8s.io/v1
+          kind: EncryptionConfiguration
+          resources:
+            - resources:
+                - secrets
+              providers:
+                - aescbc:
+                    keys:
+                      - name: key1
+                        secret: QiMgJGYXudtljldVyl+AnXQQlk7r9iUXBfVKqdEfKm8=
+                - identity: {}
