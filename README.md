@@ -469,16 +469,16 @@ v1.22.9---vmware.1-tkg.1.cc71bc8      v1.22.9+vmware.1-tkg.1.cc71bc8      True  
 v1.23.8---vmware.2-tkg.1-zshippable   v1.23.8+vmware.2-tkg.1-zshippable   True    True         16h
 ```
 
-Example of 2 classy cluster yaml files
+Example of classy cluster yaml file:
+
+https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/classycluster.yaml
+
 
 ```
-[root@centosrouter 8u0]# k apply -f ./classycluster1.yaml 
-tanzukubernetescluster.run.tanzu.vmware.com/classy1-zoned-photon created
-[root@centosrouter 8u0]# k apply -f ./classycluster2.yaml 
+[root@centosrouter 8u0]# k apply -f ./classycluster.yaml 
 cluster.cluster.x-k8s.io/classy2-zoned-photon created
 [root@centosrouter 8u0]# k get clusters
 NAME                   PHASE         AGE   VERSION
-classy1-zoned-photon   Provisioned   13s   v1.23.8+vmware.2
 classy2-zoned-photon                 5s    v1.23.8+vmware.2
 [root@centosrouter 8u0]#
 ```
