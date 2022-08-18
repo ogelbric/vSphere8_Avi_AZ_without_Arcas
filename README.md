@@ -422,7 +422,7 @@ curl -v 192.168.4.75
 < HTTP/1.1 200 OK
 < Server: nginx/1.19.4Check on ingress
 ```
-### Create Workload cluster accross 3 zones (new classycluster(capv)) (note content lib has special image)
+### Create Workload cluster accross 3 zones (new classy cluster(capv)) (note content lib has special image)
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contnetlibwithspecialimage1.png)
 
