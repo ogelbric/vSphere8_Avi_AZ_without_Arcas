@@ -318,7 +318,7 @@ k logs -n vmware-system-ako  vmware-system-ako-ako-controller-manager-58fbd65b89
 kubectl config use-context namespace1000
 ```
 
-### Create Workload cluster accross 3 zones
+### Create Workload cluster accross 3 zones (regular pre TKGu cluster) (note content lib does not have special image)
 
 https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/tkrcluster.yaml
 
@@ -379,7 +379,7 @@ tkr-zoned-cluster01-xfvvq-w78mh                           Ready    control-plane
 tkr-zoned-cluster01-xfvvq-wscsf                           Ready    control-plane,master   3h4m   v1.22.9+vmware.1
 
 ```
-### Deploy sample cluster Auth
+### Deploy sample cluster Authentication
 
 https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/authorize-psp-for-gc-service-accounts.yaml
 
