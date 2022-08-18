@@ -318,7 +318,7 @@ k logs -n vmware-system-ako  vmware-system-ako-ako-controller-manager-58fbd65b89
 kubectl config use-context namespace1000
 ```
 
-### Create Workload cluster accross 3 zones (regular pre TKGu cluster) (note content lib does not have special image)
+### Create Workload cluster accross 3 zones (regular old TKC cluster(capw)) (note content lib does not have special image)
 
 https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/tkrcluster.yaml
 
@@ -422,6 +422,55 @@ curl -v 192.168.4.75
 < HTTP/1.1 200 OK
 < Server: nginx/1.19.4Check on ingress
 ```
+### Create Workload cluster accross 3 zones (new classycluster(capv)) (note content lib has special image)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contnetlibwithspecialimage1.png)
+
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contnetlibwithspecialimage2.png)
+
+```
+!!! Note last line has the special image 
+!!! Also be aware of the content lib name vs. the outcome on NAME/VERSION 
+!!! The name was (yes difficult) Derived as follows:
+!!! k get tkr -o yaml | grep " name: photon"
+!!! photon-3-amd64-vmi-k8s-v1.23.8---vmware.2-tkg.1-zshippable
+
+k get tkr
+NAME                                  VERSION                             READY   COMPATIBLE   CREATED
+v1.16.12---vmware.1-tkg.1.da7afe7     v1.16.12+vmware.1-tkg.1.da7afe7     False   False        16h
+v1.16.14---vmware.1-tkg.1.ada4837     v1.16.14+vmware.1-tkg.1.ada4837     False   False        16h
+v1.16.8---vmware.1-tkg.3.60d2ffd      v1.16.8+vmware.1-tkg.3.60d2ffd      False   False        16h
+v1.17.11---vmware.1-tkg.1.15f1e18     v1.17.11+vmware.1-tkg.1.15f1e18     False   False        16h
+v1.17.11---vmware.1-tkg.2.ad3d374     v1.17.11+vmware.1-tkg.2.ad3d374     False   False        16h
+v1.17.13---vmware.1-tkg.2.2c133ed     v1.17.13+vmware.1-tkg.2.2c133ed     False   False        16h
+v1.17.17---vmware.1-tkg.1.d44d45a     v1.17.17+vmware.1-tkg.1.d44d45a     False   False        16h
+v1.17.7---vmware.1-tkg.1.154236c      v1.17.7+vmware.1-tkg.1.154236c      False   False        16h
+v1.17.8---vmware.1-tkg.1.5417466      v1.17.8+vmware.1-tkg.1.5417466      False   False        16h
+v1.18.10---vmware.1-tkg.1.3a6cd48     v1.18.10+vmware.1-tkg.1.3a6cd48     False   False        16h
+v1.18.15---vmware.1-tkg.1.600e412     v1.18.15+vmware.1-tkg.1.600e412     False   False        16h
+v1.18.15---vmware.1-tkg.2.ebf6117     v1.18.15+vmware.1-tkg.2.ebf6117     False   False        16h
+v1.18.19---vmware.1-tkg.1.17af790     v1.18.19+vmware.1-tkg.1.17af790     False   False        16h
+v1.18.5---vmware.1-tkg.1.c40d30d      v1.18.5+vmware.1-tkg.1.c40d30d      False   False        16h
+v1.19.11---vmware.1-tkg.1.9d9b236     v1.19.11+vmware.1-tkg.1.9d9b236     False   False        16h
+v1.19.14---vmware.1-tkg.1.8753786     v1.19.14+vmware.1-tkg.1.8753786     False   False        16h
+v1.19.16---vmware.1-tkg.1.df910e2     v1.19.16+vmware.1-tkg.1.df910e2     False   False        16h
+v1.19.7---vmware.1-tkg.1.fc82c41      v1.19.7+vmware.1-tkg.1.fc82c41      False   False        16h
+v1.19.7---vmware.1-tkg.2.f52f85a      v1.19.7+vmware.1-tkg.2.f52f85a      False   False        16h
+v1.20.12---vmware.1-tkg.1.b9a42f3     v1.20.12+vmware.1-tkg.1.b9a42f3     True    True         16h
+v1.20.2---vmware.1-tkg.1.1d4f79a      v1.20.2+vmware.1-tkg.1.1d4f79a      True    True         16h
+v1.20.2---vmware.1-tkg.2.3e10706      v1.20.2+vmware.1-tkg.2.3e10706      True    True         16h
+v1.20.7---vmware.1-tkg.1.7fb9067      v1.20.7+vmware.1-tkg.1.7fb9067      True    True         16h
+v1.20.8---vmware.1-tkg.2              v1.20.8+vmware.1-tkg.2              True    True         16h
+v1.20.9---vmware.1-tkg.1.a4cee5b      v1.20.9+vmware.1-tkg.1.a4cee5b      True    True         16h
+v1.21.2---vmware.1-tkg.1.ee25d55      v1.21.2+vmware.1-tkg.1.ee25d55      True    True         16h
+v1.21.6---vmware.1-tkg.1              v1.21.6+vmware.1-tkg.1              True    True         16h
+v1.21.6---vmware.1-tkg.1.b3d708a      v1.21.6+vmware.1-tkg.1.b3d708a      True    True         16h
+v1.22.9---vmware.1-tkg.1.cc71bc8      v1.22.9+vmware.1-tkg.1.cc71bc8      True    True         16h
+v1.23.8---vmware.2-tkg.1-zshippable   v1.23.8+vmware.2-tkg.1-zshippable   True    True         16h
+```
+
+
+
 
 Trouble shooting
 
