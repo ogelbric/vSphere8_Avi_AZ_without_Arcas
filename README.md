@@ -92,7 +92,7 @@ Result:
 
 ### Makre sure the is a content Lib (empty) for the AVI SE's (new) (AVI will push SE's to the lib from the cloud setup
 
-![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contentlib1.png)
+![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contentlib1.png) 
 
 ![Version](https://github.com/ogelbric/vSphere8_Avi_AZ_without_Arcas/blob/main/contentlib2.png)
 
